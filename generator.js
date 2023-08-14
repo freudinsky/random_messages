@@ -8,7 +8,7 @@ function randomMsg(nr) {
 	return msgCollection[nr];
 }
 function writeMsg() {
-	let random = Math.floor(Math.random() * 100 - 1);
+	let random = Math.floor(Math.random() * 100);
 	outputBg.removeAttribute("class", "output");
 	outputBg.setAttribute("class", "output-on");
 	output.append(`"${randomMsg(random)}"`);
