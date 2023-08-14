@@ -95,7 +95,8 @@ h1 {
 
 @media screen and (max-width: 720px) {
 	.card {
-		width: 85%;
+		max-width: 85%;
+		padding: 10px;
 	}
 	h1 {
 		font-size: 25px;
@@ -110,5 +111,8 @@ h1 {
 	}
 	.logo {
 		margin-right: 20px;
+	}
+	.head {
+		flex-direction: column;
 	}
 }
