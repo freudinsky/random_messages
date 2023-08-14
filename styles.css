@@ -85,6 +85,7 @@ h1 {
 	justify-content: center;
 	height: 100px;
 	width: fit-content;
+	max-width: 80%;
 	text-align: center;
 	margin: 1rem auto 2rem;
 	padding: 1.5rem;
