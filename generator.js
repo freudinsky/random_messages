@@ -8,16 +8,15 @@ function randomMsg(nr) {
 	return msgCollection[nr];
 }
 function writeMsg() {
-    let random = Math.floor(Math.random() * 100);
+	let random = Math.floor(Math.random() * 100 - 1);
 	outputBg.removeAttribute("class", "output");
 	outputBg.setAttribute("class", "output-on");
-    output.append(`"${randomMsg(random)}"`);
+	output.append(`"${randomMsg(random)}"`);
 }
 
 function btnClick() {
-    output.textContent = ""   
-    writeMsg()
-
+	output.textContent = "";
+	writeMsg();
 }
 
 btn.addEventListener("click", () => btnClick());
